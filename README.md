@@ -71,6 +71,7 @@ interval-tasks:
     commands:
       - "say [Tip] Remember to vote for the server!"
 
+```
 ---
 
 ## Documentation
