@@ -70,3 +70,9 @@ interval-tasks:
     run-on-startup: false
     commands:
       - "say [Tip] Remember to vote for the server!"
+
+---
+
+## Documentation
+
+📖 Read the full guide and ready-to-use recipes in the **[ScheduledCommands Wiki](https://github.com/sfbanjo/ScheduledCommands/wiki)**!
