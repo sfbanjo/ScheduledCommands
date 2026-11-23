@@ -1,0 +1,7 @@
+name: ScheduledCommands
+version: 1.0.0
+main: io.github.sfbanjo.scheduledcommands.ScheduledCommands
+api-version: '26.3'
+description: Executes console commands at real-world times and intervals.
+authors:
+  - sfbanjo

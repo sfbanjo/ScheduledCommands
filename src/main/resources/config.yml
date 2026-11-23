@@ -1,0 +1,48 @@
+# ScheduledCommands Configuration
+# All schedules and intervals use REAL-WORLD time (not in-game Minecraft ticks/time).
+
+settings:
+  # IANA timezone (e.g. "Europe/Rome", "UTC", "America/New_York") or "SYSTEM" for host machine clock
+  timezone: "Europe/Rome"
+  # Permission required for /scheduledcommands (/sched)
+  permission: "scheduledcommands.admin"
+
+# Tasks that run at a specific real-world clock time
+# Format for 'time': "HH:mm" or "HH:mm:ss" (24-hour format)
+# Optional 'days': [] means every day, or list specific days: [MONDAY, WEDNESDAY, SATURDAY, SUNDAY]
+scheduled-tasks:
+  daily-save:
+    enabled: true
+    time: "04:00"
+    days: []
+    commands:
+      - "say [Auto] Daily world save in progress..."
+      - "save-all"
+
+  weekend-event-reminder:
+    enabled: false
+    time: "21:00"
+    days:
+      - SATURDAY
+      - SUNDAY
+    commands:
+      - "say [Event] Weekend event starts soon!"
+      - "title @a title {\"text\":\"Weekend Event!\",\"color\":\"gold\"}"
+
+# Tasks that repeat at a real-world time interval
+# Format for 'interval': supports d (days), h (hours), m (minutes), s (seconds) - e.g. "45s", "20m", "1h30m"
+interval-tasks:
+  vote-reminder:
+    enabled: true
+    interval: "20m"
+    run-on-startup: false
+    commands:
+      - "say [Tip] Remember to vote for the server!"
+
+  backup-notice:
+    enabled: false
+    interval: "30m"
+    run-on-startup: false
+    commands:
+      - "say [Auto] Automatic server check complete."
+      - "save-all"
