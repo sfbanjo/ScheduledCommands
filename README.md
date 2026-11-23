@@ -76,4 +76,4 @@ interval-tasks:
 
 ## Documentation
 
-📖 Read the full guide and ready-to-use recipes in the **[ScheduledCommands Wiki](https://github.com/sfbanjo/ScheduledCommands/wiki)**!
+Read the full guide and ready-to-use recipes in the **[ScheduledCommands Wiki](https://github.com/sfbanjo/ScheduledCommands/wiki)**!
