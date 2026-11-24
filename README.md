@@ -1,6 +1,6 @@
 # ScheduledCommands
 
-A lightweight **Paper / Purpur 26.3** plugin (Java 25) that executes console commands at **real-world clock times** or **real-world recurring intervals** — completely independent of Minecraft server ticks or TPS.
+A lightweight **Paper / Purpur** plugin (Java 25) that executes console commands at **real-world clock times** or **real-world recurring intervals** — completely independent of Minecraft server ticks or TPS.
 
 ---
 
